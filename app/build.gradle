@@ -1,32 +1,31 @@
-apply plugin: 'android'
+plugins {
+    id 'com.android.application'
+}
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19.0.1"
+    namespace 'com.buscode.whatsinput'
+    compileSdk 32
 
     defaultConfig {
-        minSdkVersion 7
-        targetSdkVersion 19
+        applicationId "com.buscode.whatsinput"
+        minSdk 21
+        targetSdk 32
         versionCode 1
         versionName "1.0"
     }
-    signingConfigs {
-        myConfig {
-            storeFile file(STORE_FILE)
-            storePassword STORE_PASSWORD
-            keyAlias STORE_KEY_ALIAS
-            keyPassword STORE_KEY_PASSWORD
-        }
-    }
+
     buildTypes {
         release {
-            signingConfig signingConfigs.myConfig
-            runProguard false
-            proguardFiles 'proguard.cfg'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    implementation( fileTree(dir: 'libs', include: ['*.jar', '*.aar']))
 }

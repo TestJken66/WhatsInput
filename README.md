@@ -19,7 +19,6 @@ WhatsInput，是一款输入法，通过 WIFI，使你的PC键盘向手机输入
 3. 在浏览器中打开
 5. 支持 Enter 和 TAB 键
 
-下载地址：<https://play.google.com/store/apps/details?id=com.buscode.whatsinput>
 
 
 ### 手机---> 前端

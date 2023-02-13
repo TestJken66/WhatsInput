@@ -12,9 +12,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
+
 import com.buscode.whatsinput.server.BackServiceBinder;
 import com.buscode.whatsinput.server.BackServiceListener;
 import com.buscode.whatsinput.server.ExHttpConfig;
+
 import org.apache.log4j.Logger;
 
 /**

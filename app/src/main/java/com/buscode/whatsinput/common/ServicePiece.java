@@ -6,29 +6,29 @@ import android.os.IBinder;
 
 public interface ServicePiece {
 	/**
-	 * @see {@link android.app.Service#onCreate()}
+	 * @see {@link Service#onCreate()}
 	 */
 	public void onCreate();
 	/**
-	 * @see {@link android.app.Service#onDestroy()}
+	 * @see {@link Service#onDestroy()}
 	 */
 	public void onDestroy();
 	/**
-	 * @see {@link android.app.Service#onStartCommand(android.content.Intent, int, int)}
+	 * @see {@link Service#onStartCommand(Intent, int, int)}
 	 */
 	public int onStartCommand(Intent intent, int flags, int startId);
 
 	/**
 	 * !!!Only one target.!!!
 	 * Only when return true,
-	 * {@link #onStartCommand(android.content.Intent, int, int)} are exec.
+	 * {@link #onStartCommand(Intent, int, int)} are exec.
 	 * @param action Intent's Action
 	 * @return
 	 */
 	public boolean isTarget(Intent intent);
 	/**
 	 * Only one Binder in a Service
-	 * @see {@link android.app.Service#onCreate()}
+	 * @see {@link Service#onCreate()}
 	 */
 	public IBinder onBind(Intent intent);
 	

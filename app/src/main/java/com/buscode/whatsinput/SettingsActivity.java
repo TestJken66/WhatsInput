@@ -51,7 +51,7 @@ public class SettingsActivity extends PreferenceActivity {
 			
 			@Override
 			public boolean onPreferenceClick(Preference preference) {
-				Intent intent = new Intent(android.provider.Settings.ACTION_INPUT_METHOD_SETTINGS);
+				Intent intent = new Intent(Settings.ACTION_INPUT_METHOD_SETTINGS);
 				intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				startActivity(intent);
 				

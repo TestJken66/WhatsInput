@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-
 public interface ActivityPiece {
 
 	/**
@@ -15,24 +14,24 @@ public interface ActivityPiece {
 	
 	/**
 	 * @param savedInstanceState
-	 * @see {@link android.app.Activity#onCreate(android.os.Bundle savedInstanceState)}
+	 * @see {@link Activity#onCreate(Bundle savedInstanceState)}
 	 */
 	public void onCreate(Bundle savedInstanceState);
 
 	/**
-	 * @see {@link android.app.Activity#onDestroy()}
+	 * @see {@link Activity#onDestroy()}
 	 */
 	public void onDestroy();
 	/**
-	 * @see {@link android.app.Activity#onResume()}
+	 * @see {@link Activity#onResume()}
 	 */
 	public void onResume();
 	/**
-	 * @see {@link android.app.Activity#onPause()}
+	 * @see {@link Activity#onPause()}
 	 */
 	public void onPause();
 	/**
-	 * @see {@link android.app.Activity#onActivityResult(int, int, android.content.Intent)}
+	 * @see {@link Activity#onActivityResult(int, int, Intent)}
 	 */
 	public void onActivityResult(int requestCode, int resultCode, Intent data);
 }

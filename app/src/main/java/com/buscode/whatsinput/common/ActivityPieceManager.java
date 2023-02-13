@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
-
 public class ActivityPieceManager implements ActivityPiece, ActivityPieceContainer {
 
 	private ArrayList<ActivityPiece> mPieces = new ArrayList<ActivityPiece>();

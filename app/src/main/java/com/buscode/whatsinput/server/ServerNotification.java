@@ -1,12 +1,12 @@
-package com.sand.airinput.server;
+package com.buscode.whatsinput.server;
 
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+
 import com.buscode.whatsinput.MainActivity;
-import com.buscode.whatsinput.server.ExHttpConfig;
 import com.buscode.whatsinput.R;
 
 public class ServerNotification {
@@ -40,7 +40,7 @@ public class ServerNotification {
     private static Notification makeSPSNotification(Context context, String contentText, boolean notice) {
         Builder builder = new Builder(context);
 
-        builder.setIcon(R.drawable.icon);
+        builder.setIcon(R.mipmap.ic_launcher);
         builder.setTickerText("Sps ScreenShot");
         builder.setWhen(System.currentTimeMillis());
         builder.addFlags(Notification.FLAG_NO_CLEAR | Notification.FLAG_ONGOING_EVENT);
@@ -111,7 +111,7 @@ public class ServerNotification {
 
         public Builder setLatestEventInfo(String contentTitle, String contentText, PendingIntent contentIntent) {
 
-            mNotification.setLatestEventInfo(mContext, contentTitle, contentText, contentIntent);
+//            mNotification.setLatestEventInfo(mContext, contentTitle, contentText, contentIntent);
             return this;
         }
 

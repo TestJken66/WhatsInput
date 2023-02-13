@@ -19,11 +19,13 @@ import android.widget.PopupMenu;
 import android.widget.PopupMenu.OnMenuItemClickListener;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.buscode.whatsinput.beans.*;
 import com.buscode.whatsinput.common.Net;
 import com.buscode.whatsinput.server.BackServiceBinder;
 import com.buscode.whatsinput.server.BackServiceListener;
 import com.buscode.whatsinput.server.ExHttpConfig;
+
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
